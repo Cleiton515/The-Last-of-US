@@ -1,0 +1,497 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    background-image: url(/img/the-last-of-us-part-i.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+width: 100%;
+height: 3rem;
+background-color: rgba(44, 44, 44, 0.699);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music{
+    width: 200px;
+    height: 30px;
+
+}
+
+.menu-options{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#barras{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: white;
+    margin-top: .1rem;
+}
+
+#barras:hover{
+    color: black;
+}
+
+nav #menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    width: 455px;
+    height: 95vh;
+    background-color: rgba(44, 44, 44, 0.699);
+    transform: translateX(100%);
+    transition: all ease-in-out .3s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#menu h2{
+    margin-inline: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.close{
+    position: fixed;
+    left: .9rem;
+    top: .7rem;
+
+}
+
+#close{
+    font-size: 0;
+   color: rgba(255, 254, 254, 0.993);
+}
+
+#close:hover{
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+}
+
+.menu-options a img{
+    border-radius: 10px;
+}
+
+.conteiner-principal{
+    margin-top: -3.5rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    width: 800px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.text h1{
+    font-size: 5.1rem;
+}
+
+.text p{
+    font-size: 1.32rem;
+}
+
+.destaque{
+    border-bottom: solid 1rem rgb(229, 46, 46);
+    padding-bottom: .3rem;
+    padding-left: 3rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 50px;
+    border-bottom: solid rgb(229, 46, 46) 2px;
+    margin-left: 1rem;
+    margin-top: .6rem;
+}
+
+.buuy{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 255, 187, 0.63);
+    padding: .5rem;
+    padding-inline: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: ease-in .3s;
+}
+
+.buuy:hover{
+    background-color: rgb(229, 46, 46);
+}
+
+.photos{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: .3rem;
+ position: absolute;
+ right: 1rem;
+ top: 7rem;
+ bottom: 4rem;
+ background-color: rgba(61, 61, 61, 0.516);
+ padding: 1rem;
+ border-radius: 5px;
+}
+
+#txt, #txxt, #txxt{
+    transition:ease-in width .5s;
+}
+
+@media (max-width:1540px) {
+
+    header{
+        background-image: url(/img/back-body-note.jpg);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.315);
+    }
+
+    nav #menu{
+        background-color: rgba(133, 72, 36, 0.315);
+    }
+
+    .photos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+        position: absolute;
+        right: 1rem;
+        top: 6rem;
+        bottom: 4rem;
+        background-color: rgba(133, 72, 36, 0.315);
+        padding: 1rem;
+        border-radius: 5px;
+        height: 520px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        font-weight: 600;
+        margin-top: 7rem;
+        margin-left: 1rem;
+        width: 800px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .text h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .text{
+        width: 100%;
+    }
+
+    #menu h2{
+    margin-inline: 10rem;
+   }
+
+   
+}
+
+@media (max-width: 1000px) {
+
+    .text{
+        width: 100%;
+    }
+
+    #menu h2{
+    font-size: 3rem;
+   }
+}
+
+@media (max-width: 994px) {
+    .text{
+        width: 100%;
+        height: 50vh;
+        font-size: 1.2rem;
+   }
+
+   header{
+    background-image: url(/img/tablet-back.jpeg);
+    background-size: cover;
+   }
+
+   #menu h2{
+    margin-inline: 10rem;
+   }
+
+   nav #menu{
+    background-color: rgb(8, 19, 38);
+}
+
+nav{
+    background-color: rgba(8, 19, 38, 0.693);
+}
+
+.photos{
+    display: none;
+}
+
+}
+
+
+
+@media (max-width: 750px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(/img/mobile-back.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 100%;
+        font-size: .6rem;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+
+    .photos{
+        display: none;
+    }
+
+    .buy{
+        width: 330px;
+        height: 50px;
+    }
+
+    #menu h2{
+        margin-inline: 10rem;
+    }
+
+    nav #menu{
+        background-color: rgb(133, 72, 36);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.693);
+
+    }
+
+    
+}
+
+@media (max-width: 742px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(/img/mobile-back.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .text h1{
+        font-size: 4rem;
+    }
+
+    .photos{
+        display: none;
+    }
+
+    .buy{
+        width: 330px;
+        height: 50px;
+    }
+
+    #menu h2{
+        margin-inline: 10rem;
+    }
+
+    nav #menu{
+        background-color: rgb(133, 72, 36);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.693);
+
+    }
+
+    
+}
+
+@media (max-width: 616px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(/img/mobile-back.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .text h1{
+        font-size: 3rem;
+    }
+
+    .photos{
+        display: none;
+    }
+
+    .buy{
+        width: 330px;
+        height: 50px;
+    }
+
+    #menu h2{
+        margin-inline: 10rem;
+    }
+
+    nav #menu{
+        background-color: rgb(133, 72, 36);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.693);
+
+    }
+
+    
+}
+
+@media (max-width: 570px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(/img/mobile-back.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+
+    .photos{
+        display: none;
+    }
+
+    .buy{
+        width: 330px;
+        height: 50px;
+    }
+
+    #menu h2{
+        margin-inline: 10rem;
+    }
+
+    nav #menu{
+        background-color: rgb(133, 72, 36);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.693);
+
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url(/img/mobile-back.jpg);
+        background-size: cover;
+    }
+
+    .text{
+        width: 100%;
+        font-size: .6rem;
+    }
+
+    .text h1{
+        font-size: 1rem;
+    }
+
+    .photos{
+        display: none;
+    }
+
+    .buy{
+        width: 330px;
+        height: 50px;
+    }
+
+    #menu h2{
+        margin-inline: 10rem;
+    }
+
+    nav #menu{
+        background-color: rgb(133, 72, 36);
+    }
+
+    nav{
+        background-color: rgba(133, 72, 36, 0.693);
+
+    }
+
+    
+}

@@ -1,0 +1,119 @@
+.menu-options img{
+    width: 190px;
+    height: 130px;
+    transition: all ease-in-out .3s;
+    filter: grayscale(100%);
+}
+.menu-options a img:hover{
+    transform:scale(1.5);
+    filter: grayscale(0);
+    border: solid 1px white;
+}
+.nav-logo{
+    width: 60px;
+    margin-right: 1rem;
+    margin-top: .1rem;
+}
+
+.logo-ps{
+    width: 100px;
+}
+
+#video{
+    font-size: 2rem;
+    color: black;
+    border-radius: 50%;
+    transition: ease-in .2s;
+}
+
+#texto{
+    font-size: 1.6rem;
+    color: black;
+    transition: ease-in .2s;
+    display: none;
+}
+
+#video:hover{
+    background-color: black;
+    color: rgb(229, 46, 46);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#texto:hover{
+    color: rgb(229, 46, 46);
+    cursor: pointer;
+}
+
+.barra-left{
+    width: .01rem;
+    height: 2.5rem;
+    background-color: rgb(229, 46, 46);
+    transform: rotate(30deg);
+    z-index: 0;
+
+}
+
+.gameplay{
+    width: 400px;
+    height: 250px;
+}
+
+#youtube{
+width: 0px;
+height: 0px;
+transition:all ease-in-out width .5s;
+}
+
+
+@media (max-width:1540px) {
+    .gameplay{
+        width: 320px;
+        height: 160px;
+    }
+
+    .menu-options img{
+        width: 180px;
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .logo-ps{
+        width: 80px;
+    }
+}
+    @media (max-width: 768px) {
+        .logo-ps{
+            width: 80px;
+        }
+    
+        .text p{
+            font-size: 1rem;
+        }
+}
+
+@media (max-width: 466px) {
+    .menu-options img{
+        width: 160px;
+        height: 100px;
+    }
+
+    .text p{
+        font-size: .6rem;
+    }
+
+    #video{
+    display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu-options img{
+        width: 140px;
+        height: 100px;
+    }
+
+
+}
